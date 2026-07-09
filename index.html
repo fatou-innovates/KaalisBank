@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>KaalisBank</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <!-- A small utlity-bar at the top of the page-->
+         <div class="utility-bar">
+            <div class="utility-left">
+                <a href="tel:+221338100000"><i class="icon-phone"></i>+221 33 810 00 00</a>
+                <a href="#agences">Trouver une agence</a>
+                <span class="divider">|</span>
+                <a href="#" class="lang">Fr</a>
+            </div>
+         </div>
+        <!-- Main nav -->
+        <header class="main-nav">
+            <a href="index.html" class="logo">KaalisBank</a>
+            
+            <nav class="nav-links">
+                <a href="index.html" class="active">Accueil</a>
+                <a href="#services">Services</a>
+                <a href="#convertisseur">Convertisseur</a>
+                <a href="#apropos">A propos</a>
+            </nav>
+
+            <a href="login.html" class="btn-client">Se connecter</a>
+        </header>
+
+        <section class="hero">
+            <div class="hero-text">
+                <span class="eyebrow">Banque digitale UEMOA</span>
+                <h1>Gerez votre argent, en toute simplicite</h1>
+                <p>Comptes, virements et conversion XOF en temps reel, penses pour la zone UEMOA.</p>
+                <div class="hero-actions">
+                    <a href="login.html" class="btn-primary">Ouvrir un compte</a>
+                    <a href="#services" class="btn-secondary">En savoir plus</a>
+                </div>
+            </div>
+
+            <div class="converter-card" id="convertisseur" data-widget="converter">
+                <h3>Convertisseur rapide</h3>
+                <p class="converter-sub">Estimation indicative, hors frais eventuels.</p>
+
+                <div class="field-row">
+                    <input type="text" inputmode="decimal" value="100000" data-role="amount-input" aria-label="Montant a convertir">
+                    <select data-role="from-select" aria-label="Devise source">
+                        <option value="XOF" selected>XOF</option>
+                        <option value="EUR">EUR</option>
+                        <option value="USD">USD</option>
+                        <option value="GBP">GBP</option>
+                    </select>
+                </div>
+
+                <div class="swap-row">
+                    <button type="button" class="swap-btn" data-role="swap-btn" aria-label="Inverser les devises">&#8645;</button>
+                </div>
+
+                <div class="field-row">
+                    <input type="text" readonly data-role="result-output" aria-label="Resultat">
+                    <select data-role="to-select" aria-label="Devise cible">
+                        <option value="XOF">XOF</option>
+                        <option value="EUR" selected>EUR</option>
+                        <option value="USD">USD</option>
+                        <option value="GBP">GBP</option>
+                    </select>
+                </div>
+
+                <p class="rate-note">Taux XOF/EUR fixe (655,957). Autres taux indicatifs.</p>
+            </div>
+        </section>
+        <section class="services" id="services">
+            <div class="services-inner">
+                <span class="eyebrow">Nos services</span>
+                <h2>Tout ce qu'il faut pour gerer votre argent</h2>
+
+                <div class="services-grid">
+                    <div class="service-card">
+                        <div class="service-icon">01</div>
+                        <h3>Comptes courants</h3>
+                        <p>Ouverture en ligne, sans frais de tenue de compte la premiere annee.</p>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="service-icon">02</div>
+                        <h3>Virements instantanes</h3>
+                        <p>Transferts locaux et internationaux suivis en temps reel.</p>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="service-icon">03</div>
+                        <h3>Conversion de devises</h3>
+                        <p>XOF, EUR, USD, GBP — convertissez avant d'envoyer ou de recevoir.</p>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="service-icon">04</div>
+                        <h3>Cartes bancaires</h3>
+                        <p>Cartes physiques et virtuelles, activables depuis l'espace client.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="about" id="apropos">
+            <div class="about-inner">
+                <div class="about-text">
+                    <span class="eyebrow">A propos de KaalisBank</span>
+                    <h2>Une banque pensee pour la zone UEMOA</h2>
+                    <p>KaalisBank est un projet de demonstration presentant une experience de banque digitale adaptee a la region. Ce site est un prototype pedagogique, non une banque reelle.</p>
+
+                    <div class="about-stats">
+                        <div class="stat">
+                            <p class="stat-number">4</p>
+                            <p class="stat-label">Devises supportees</p>
+                        </div>
+                        <div class="stat">
+                            <p class="stat-number">100%</p>
+                            <p class="stat-label">En ligne</p>
+                        </div>
+                        <div class="stat">
+                            <p class="stat-number">0 XOF</p>
+                            <p class="stat-label">Frais de tenue de compte</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer class="site-footer">
+            <div class="footer-inner">
+                <div class="footer-col">
+                    <p class="footer-logo">KaalisBank</p>
+                    <p class="footer-text">Banque digitale pensee pour la zone UEMOA. Projet de demonstration.</p>
+                </div>
+
+                <div class="footer-col">
+                    <p class="footer-heading">Liens</p>
+                    <a href="index.html">Accueil</a>
+                    <a href="#services">Services</a>
+                    <a href="#convertisseur">Convertisseur</a>
+                    <a href="#apropos">A propos</a>
+                </div>
+
+                <div class="footer-col">
+                    <p class="footer-heading">Contact</p>
+                    <a href="tel:+221338100000">+221 33 810 00 00</a>
+                    <a href="#agences">Trouver une agence</a>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 KaalisBank — Dakar, Senegal</p>
+            </div>
+        </footer>
+
+        <script src="script.js"></script>
+        
+    </body>
+</html>

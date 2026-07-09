@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Tableau de bord — KaalisBank</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+
+        <div class="utility-bar">
+            <div class="utility-left">
+                <a href="tel:+221338100000"><i class="icon-phone"></i> +221 33 810 00 00</a>
+                <a href="#agences">Trouver une agence</a>
+            </div>
+            <div class="utility-right">
+                <a href="#" class="lang active">FR</a>
+                <span class="divider">|</span>
+                <a href="#" class="lang">EN</a>
+            </div>
+        </div>
+
+        <header class="main-nav">
+            <a href="dashboard.html" class="logo">KaalisBank</a>
+            <nav class="nav-links">
+                <a href="dashboard.html" class="active">Tableau de bord</a>
+                <a href="#virements">Virements</a>
+                <a href="#convertisseur">Convertisseur</a>
+                <a href="#releves">Releves</a>
+            </nav>
+            <a href="index.html" class="btn-client">Deconnexion</a>
+        </header>
+
+        <div class="dash-wrap">
+
+            <div class="dash-header">
+                <div>
+                    <h2>Bonjour, Fatou</h2>
+                    <p>Voici un apercu de votre compte aujourd'hui.</p>
+                </div>
+            </div>
+
+            <div class="metric-grid">
+                <div class="metric-card">
+                    <p class="metric-label">Solde disponible</p>
+                    <p class="metric-value">1 245 300 XOF</p>
+                    <p class="metric-delta up">+2,1% ce mois</p>
+                </div>
+                <div class="metric-card">
+                    <p class="metric-label">Dernier virement</p>
+                    <p class="metric-value">-25 000 XOF</p>
+                    <p class="metric-delta down">Envoye a K. Ronaldo </p>
+                </div>
+                <div class="metric-card">
+                    <p class="metric-label">Taux XOF / EUR</p>
+                    <p class="metric-value">655,957</p>
+                    <p class="metric-delta up">Peg fixe</p>
+                </div>
+            </div>
+
+            <div class="dash-grid">
+                <div class="panel" id="releves">
+                    <h3>Transactions recentes</h3>
+                    <div class="tx-row">
+                        <div>
+                            <p class="tx-name">Free Senegal — Facture</p>
+                            <p class="tx-meta">05 juillet 2026</p>
+                        </div>
+                        <p class="tx-amount negative">-15 000 XOF</p>
+                    </div>
+                    <div class="tx-row">
+                        <div>
+                            <p class="tx-name">Virement recu — M. Diakhame</p>
+                            <p class="tx-meta">03 juillet 2026</p>
+                        </div>
+                        <p class="tx-amount positive">+50 000 XOF</p>
+                    </div>
+                    <div class="tx-row">
+                        <div>
+                            <p class="tx-name">Orange Money — Retrait</p>
+                            <p class="tx-meta">01 juillet 2026</p>
+                        </div>
+                        <p class="tx-amount negative">-10 000 XOF</p>
+                    </div>
+                    <div class="tx-row">
+                        <div>
+                            <p class="tx-name">Salaire — ESP Partenaire</p>
+                            <p class="tx-meta">28 juin 2026</p>
+                        </div>
+                        <p class="tx-amount positive">+350 000 XOF</p>
+                    </div>
+                </div>
+
+                <div class="panel accent" id="convertisseur" data-widget="converter">
+                    <span class="badge-mini">Convertisseur</span>
+                    <h3>Convertir des devises</h3>
+
+                    <div class="field-row">
+                        <input type="text" inputmode="decimal" value="100000" data-role="amount-input" aria-label="Montant a convertir">
+                        <select data-role="from-select" aria-label="Devise source">
+                            <option value="XOF" selected>XOF</option>
+                            <option value="EUR">EUR</option>
+                            <option value="USD">USD</option>
+                            <option value="GBP">GBP</option>
+                        </select>
+                    </div>
+
+                    <div class="swap-row">
+                        <button type="button" class="swap-btn" data-role="swap-btn" aria-label="Inverser les devises">&#8645;</button>
+                    </div>
+
+                    <div class="field-row">
+                        <input type="text" readonly data-role="result-output" aria-label="Resultat">
+                        <select data-role="to-select" aria-label="Devise cible">
+                            <option value="XOF">XOF</option>
+                            <option value="EUR">EUR</option>
+                            <option value="USD" selected>USD</option>
+                            <option value="GBP">GBP</option>
+                        </select>
+                    </div>
+
+                    <p class="rate-note">Taux indicatifs, mis a jour manuellement.</p>
+                </div>
+            </div>
+
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>
