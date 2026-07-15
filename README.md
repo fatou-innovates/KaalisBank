@@ -8,4 +8,7 @@ Built with plain HTML, CSS, and vanilla JavaScript — no frameworks, no backend
 
 This is a demo project only — not a real bank.
 
+Code source : https://github.com/fatou-innovates/KaalisBank
+Démo en ligne : https://fatou-innovates.github.io/KaalisBank/
+
 **Author:** Fatou, L1 GLSI student at ESP/UCAD, Dakar.
