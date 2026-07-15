@@ -26,7 +26,7 @@ const CURRENCY_DECIMALS = {
 
 // La fonction de calcul pure : montant + devise de depart + devise cible -> resultat
 function convert(amount, from, to) {
-  if (isNaN(amount)) return 0;
+  if (isNaN(amount)) return 0; // Controle de saisie
 
   // Etape 1 : on convertit le montant vers XOF (la devise pivot)
   const amountInXOF = amount / RATES_PER_XOF[from];

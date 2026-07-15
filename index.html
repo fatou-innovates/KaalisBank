@@ -30,6 +30,7 @@
             <a href="login.html" class="btn-client">Se connecter</a>
         </header>
 
+        <!-- Hero: main title + quick converter -->
         <section class="hero">
             <div class="hero-text">
                 <span class="eyebrow">Banque digitale UEMOA</span>
@@ -41,10 +42,12 @@
                 </div>
             </div>
 
+            <!-- Converter widget: script.js hooks into this via data-role attributes -->
             <div class="converter-card" id="convertisseur" data-widget="converter">
                 <h3>Convertisseur rapide</h3>
                 <p class="converter-sub">Estimation indicative, hors frais eventuels.</p>
 
+                <!-- Amount + source currency -->
                 <div class="field-row">
                     <input type="text" inputmode="decimal" value="100000" data-role="amount-input" aria-label="Montant a convertir">
                     <select data-role="from-select" aria-label="Devise source">
@@ -55,10 +58,12 @@
                     </select>
                 </div>
 
+                <!-- Button to swap "from" and "to" currencies -->
                 <div class="swap-row">
                     <button type="button" class="swap-btn" data-role="swap-btn" aria-label="Inverser les devises">&#8645;</button>
                 </div>
 
+                <!-- Result + target currency -->
                 <div class="field-row">
                     <input type="text" readonly data-role="result-output" aria-label="Resultat">
                     <select data-role="to-select" aria-label="Devise cible">
@@ -72,6 +77,8 @@
                 <p class="rate-note">Taux XOF/EUR fixe (655,957). Autres taux indicatifs.</p>
             </div>
         </section>
+
+        <!-- Services: 4 cards with what the bank offers -->
         <section class="services" id="services">
             <div class="services-inner">
                 <span class="eyebrow">Nos services</span>
@@ -104,6 +111,8 @@
                 </div>
             </div>
         </section>
+
+        <!-- About: short pitch + 3 key stats -->
         <section class="about" id="apropos">
             <div class="about-inner">
                 <div class="about-text">
@@ -128,6 +137,8 @@
                 </div>
             </div>
         </section>
+
+        <!-- Footer: logo, nav links again, contact -->
         <footer class="site-footer">
             <div class="footer-inner">
                 <div class="footer-col">
